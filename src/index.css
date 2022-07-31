@@ -13,6 +13,16 @@ code {
     monospace;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
 :root {
   --color1: #3A7B99;
   --color2: #70AFCE;

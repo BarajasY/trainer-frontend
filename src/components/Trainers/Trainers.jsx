@@ -5,7 +5,7 @@ const Trainers = () => {
     const [Trainers, setTrainers] = useState([])
 
     const fetchTrainers = async () => {
-        const data = await fetch('/trainers');
+        const data = await fetch('https://yahirmb-trainers-backend.herokuapp.com/trainers');
         const format_data = await data.json();
         setTrainers(format_data);
     }
@@ -22,7 +22,7 @@ const Trainers = () => {
                     <div className="trainer_data" key={key}>
                         <h1>{object.name}</h1>
                         <img src={object.image} alt={object.name} />
-                        <h1>Region {object.region}</h1>
+                        <h1>{object.region}</h1>
                     </div>
                 ))}
             </div>
