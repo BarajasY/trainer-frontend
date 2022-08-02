@@ -32,12 +32,36 @@ const TrainerInfo = () => {
                                 <h1>{result.region}</h1>
                             </div>
                             <div className="card_footer">
-                                <p><span>HP</span>{result.hp}</p>
-                                <p><span>ATK</span>{result.atk}</p>
-                                <p><span>DEF</span>{result.def}</p>
-                                <p><span>S.ATK</span>{result.satk}</p>
-                                <p><span>S.DEF</span>{result.sdef}</p>
-                                <p><span>SPD</span>{result.spd}</p>
+                                <div className="progress_bar">
+                                    <div className="fill_bar" style={{ width: `${result.hp * 100 / 255}%` }}>
+                                        <p>HP</p>
+                                    </div>
+                                </div>
+                                <div className="progress_bar">
+                                    <div className="fill_bar" style={{ width: `${result.atk * 100 / 255}%` }}>
+                                        <p>ATK</p>
+                                    </div>
+                                </div>
+                                <div className="progress_bar">
+                                    <div className="fill_bar" style={{ width: `${result.def * 100 / 255}%` }}>
+                                        <p>DEF</p>
+                                    </div>
+                                </div>
+                                <div className="progress_bar">
+                                    <div className="fill_bar" style={{ width: `${result.satk * 100 / 255}%` }}>
+                                        <p>S.ATK</p>
+                                    </div>
+                                </div>
+                                <div className="progress_bar">
+                                    <div className="fill_bar" style={{ width: `${result.sdef * 100 / 255}%` }}>
+                                        <p>S.DEF</p>
+                                    </div>
+                                </div>
+                                <div className="progress_bar">
+                                    <div className="fill_bar" style={{ width: `${result.spd * 100 / 255}%` }}>
+                                        <p>SPD</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     ))}
