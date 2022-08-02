@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import './TrainerInfo.css';
 import { useParams } from 'react-router-dom';
 
@@ -25,7 +26,7 @@ const TrainerInfo = () => {
                 </div>
                 <div className="wrapper">
                     {Pokemons.map((result, index) => (
-                        <div className="pokemon_card" key={index}>
+                        <motion.div className="pokemon_card" key={index} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: index * .2 }} whileHover={{ y: -10, transition: { duration: .01 } }}>
                             <div className="card_header">
                                 <h1>{result.name}</h1>
                                 <img src={result.image} alt={result.name} />
@@ -63,7 +64,7 @@ const TrainerInfo = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </div>
