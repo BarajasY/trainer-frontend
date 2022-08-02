@@ -28,6 +28,7 @@ const TrainerInfo = () => {
                         <div className="pokemon_card" key={index}>
                             <div className="card_header">
                                 <h1>{result.name}</h1>
+                                <img src={result.image} alt={result.name} />
                                 <h1>{result.region}</h1>
                             </div>
                             <div className="card_footer">

@@ -52,12 +52,18 @@
     flex-direction: column;
     text-align: center;
     justify-content: space-between;
+    align-items: center;
 }
 
 .card_header h1 {
     color: var(--color3);
     font-family: 'Poppins';
     margin-right: 20px;
+}
+
+.card_header img {
+    width: 150px;
+    height: 150px;
 }
 
 .card_footer {
