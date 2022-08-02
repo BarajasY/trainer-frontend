@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './Trainers.css';
 
 const Trainers = () => {
@@ -20,13 +21,13 @@ const Trainers = () => {
             <div className="trainers_content">
                 {Trainers.map((object, key) => (
                     <div className="trainer_data" key={key}>
-                        <h1>{object.name}</h1>
+                        <Link to={object.name}>{object.name}</Link>
                         <img src={object.image} alt={object.name} />
                         <h1>{object.region}</h1>
                     </div>
                 ))}
             </div>
-        </div>
+        </div >
     )
 }
 
