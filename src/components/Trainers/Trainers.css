@@ -36,9 +36,8 @@
 .trainer_data a {
     font-family: 'Poppins';
     font-weight: 500;
-    font-size: 20px;
     color: white;
-    font-size: 50px;
+    font-size: 65px;
     transition: .5s;
 }
 
