@@ -4,7 +4,7 @@
     height: fit-content;
     display: flex;
     justify-content: center;
-    background: var(--color2);
+    background: white;
 }
 
 .trainers_content {
@@ -17,7 +17,7 @@
 .trainer_data {
     width: 300px;
     padding: 30px;
-    background: var(--color1);
+    background: var(--color2);
     color: white;
     display: flex;
     flex-direction: column;

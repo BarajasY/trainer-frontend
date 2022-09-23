@@ -4,7 +4,7 @@
     height: 70px;
     display: flex;
     justify-content: center;
-    background: var(--color1);
+    background: var(--color2);
 }
 
 .navbar_content {
@@ -17,12 +17,12 @@
 }
 
 .navbar_content a {
-    color: var(--white);
+    color: var(--color3);
     font-family: 'Montserrat';
     font-weight: 500;
     font-size: 30px;
 }
 
 .navbar_content a span {
-    color: var(--color3);
+    color: var(--color1);
 }
