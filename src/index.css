@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: var(--color2);
+  background: var(--color1);
 }
 
 code {
@@ -24,8 +24,8 @@ a {
 }
 
 :root {
-  --color1: #3A7B99;
-  --color2: #70AFCE;
-  --color3: #A5DEF1;
+  --color1: #001825;
+  --color2: #97d5f2;
+  --color3: #23a7e5;
   --white: #FFFFFF;
 }

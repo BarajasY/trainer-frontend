@@ -21,7 +21,7 @@ const Trainers = () => {
             <div className="trainers_content">
                 {Trainers.map((object, key) => (
                     <Link to={object.name}>
-                        <motion.div className="trainer_data" key={key} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: key * .2 }}>
+                        <motion.div className="trainer_data" key={key} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: .2, delay: key * .2 }}>
                             <Link to={object.name}>{object.name}</Link>
                             <img src={object.image} alt={object.name} />
                             <h1>{object.region}</h1>

@@ -4,7 +4,7 @@
     height: 70px;
     display: flex;
     justify-content: center;
-    background: var(--color2);
+    background: var(--color1);
 }
 
 .navbar_content {
@@ -13,16 +13,45 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 1px 10px black;
+    border-bottom: 1px solid var(--color2);
 }
 
 .navbar_content a {
     color: var(--color3);
     font-family: 'Montserrat';
-    font-weight: 500;
+    font-weight: 800;
     font-size: 30px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: .2s;
 }
 
 .navbar_content a span {
+    color: var(--color2);
+}
+
+.navbar_content a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110%;
+    height: 110%;
+    background: var(--color3);
+    transition: .5s;
+    z-index: -1;
+    transform: translateX(-100%);
+}
+
+.navbar_content a:hover::before {
+    transform: translateX(0);
+}
+
+.navbar_content a:hover {
+    color: var(--color1);
+}
+
+.navbar_content a:hover span {
     color: var(--color1);
 }
