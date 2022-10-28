@@ -55,13 +55,26 @@
     color: var(--color3)
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .trainers_content {
         width: 100%;
     }
 
-    .trainers_data img {
-        width: 100px;
-        height: 100px;
+    .trainer_data img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .trainer_data {
+        width: 150px;
+        margin: 15px
+    }
+
+    .trainer_data a {
+        font-size: 30px;
+    }
+
+    .trainer_data h1 {
+        font-size: 25px;
     }
 }
