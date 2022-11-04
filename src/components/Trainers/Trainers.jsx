@@ -8,7 +8,8 @@ const Trainers = () => {
 
     useEffect(() => {
         const fetchTrainers = async () => {
-            const data = await fetch('https://yahirmb-trainers-backend.herokuapp.com/trainers');
+            const url = process.env.REACT_APP_FETCH_URL;
+            const data = await fetch(`${url}`);
             const format_data = await data.json();
             setTrainers(format_data);
         }

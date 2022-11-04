@@ -9,7 +9,8 @@ const TrainerInfo = () => {
 
     useEffect(() => {
         const getPokemons = async () => {
-            const data = await fetch(`https://yahirmb-trainers-backend.herokuapp.com/trainers/${name}`)
+            const url = process.env.REACT_APP_FETCH_URL;
+            const data = await fetch(`${url}/${name}`)
             const formated_data = await data.json();
             setPokemons(formated_data);
         }
