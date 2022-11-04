@@ -9,7 +9,7 @@ const TrainerInfo = () => {
 
     useEffect(() => {
         const getPokemons = async () => {
-            const url = process.env.REACT_APP_FETCH_URL;
+            const url = process.env.NODE_ENV === "production" ? process.env.REACT_APP_PROD_FETCH_URL : process.env.REACT_APP_DEV_FETCH_URL;
             const data = await fetch(`${url}/${name}`)
             const formated_data = await data.json();
             setPokemons(formated_data);
