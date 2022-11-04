@@ -9,6 +9,7 @@ const Trainers = () => {
     useEffect(() => {
         const fetchTrainers = async () => {
             const url = process.env.NODE_ENV === "production" ? process.env.REACT_APP_PROD_FETCH_URL : process.env.REACT_APP_DEV_FETCH_URL;
+            console.log(process.env);
             const data = await fetch(`${url}`);
             const format_data = await data.json();
             setTrainers(format_data);
