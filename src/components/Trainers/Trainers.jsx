@@ -8,7 +8,7 @@ const Trainers = () => {
 
     useEffect(() => {
         const fetchTrainers = async () => {
-            const data = await fetch('https://yahirmb-trainers-backend.herokuapp.com/trainers');
+            const data = await fetch('http://localhost:3200/trainers');
             const format_data = await data.json();
             setTrainers(format_data);
         }
@@ -21,7 +21,7 @@ const Trainers = () => {
             <div className="trainers_content">
                 {Trainers.map((object, key) => (
                     <Link to={object.name} key={key}>
-                        <motion.div className="trainer_data" key={key} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: .2, delay: key * .2 }}>
+                        <motion.div className="trainer_data" key={key} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: .2, delay: key * .05 }}>
                             <Link to={object.name}>{object.name}</Link>
                             <img src={object.image} alt={object.name} />
                             <h1>{object.region}</h1>

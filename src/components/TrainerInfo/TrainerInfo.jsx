@@ -9,7 +9,7 @@ const TrainerInfo = () => {
 
     useEffect(() => {
         const getPokemons = async () => {
-            const data = await fetch(`https://yahirmb-trainers-backend.herokuapp.com/trainers/${name}`)
+            const data = await fetch(`http://localhost:3200/trainers/${name}`)
             const formated_data = await data.json();
             setPokemons(formated_data);
         }
