@@ -26,7 +26,7 @@ const TrainerInfo = () => {
                 </div>
                 <div className="wrapper">
                     {Pokemons.map((result, index) => (
-                        <motion.div className="pokemon_card" key={index} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: .2, delay: index * .2 }}>
+                        <motion.div className="pokemon_card" key={index} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: .2, delay: index * .05 }}>
                             <div className="card_header">
                                 <h1>{result.name}</h1>
                                 <img src={result.image} alt={result.name} />
